@@ -1,9 +1,12 @@
 # 静的サイトを作る時の環境構築
 
 ## setup
-### compass
+### temp-staticからファイルを複製
 ```zsh
-compass init
-
+clone-static <repository>
 ```
-liveloader
+### compassを起動
+```zsh
+compass w
+```
+### htmlを右クリックしてlivereloadをオン
