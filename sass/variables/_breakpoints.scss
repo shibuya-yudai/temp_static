@@ -1,0 +1,26 @@
+/*****************************
+* variables/breakpoints.scss
+* breakpointはここで定義したものを呼び出す
+* 使用例
+
+@include media-query(sm) {
+  color: blue;
+}
+*****************************/
+
+//breakpointsの定義
+$breakpoints: (
+    'sm': 'screen and (min-width: 400px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1000px)',
+    'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+//使う関数
+@mixin media-query($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+      @media #{unquote(map-get($breakpoints, $breakpoint))} {
+          @content;
+      }
+  }
+}

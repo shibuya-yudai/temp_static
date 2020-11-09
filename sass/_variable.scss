@@ -1,0 +1,8 @@
+/**********************
+* variable.scss
+* variables/で定義したscssを読み込むファイル
+**********************/
+@import "./variables/_colors";
+@import "./variables/_breakpoints";
+@import "./variables/_functions";
+@import "./variables/_fonts";

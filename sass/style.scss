@@ -1,0 +1,13 @@
+@import "./initialize";
+
+/*雑に書きたい時書く、書いたらふさわしい場所に移すこと*/
+h1{
+  color: colors(twitter);
+  @include center;
+}
+div{
+  @include center;
+}
+body{
+  margin-bottom: 40rem;
+}
