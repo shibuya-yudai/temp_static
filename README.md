@@ -1,7 +1,7 @@
 # 静的サイトを作る時の環境構築
 
 ---------------------------------------------
-## setup
+## SET UP
 ### temp-staticからファイルを複製
 ```zsh
 clone-static <repository>
@@ -26,6 +26,8 @@ BEMとは？
 [BEMの書き方](https://qiita.com/mame_hashbill/items/81267a7ec498ff113a3b)
 
 [BEMの考え方を基にしたHTML / CSSのid・classの命名規則](https://qiita.com/kitaro0729/items/3189ded5647475bc2ae7)
+
+---------------------------------------------
 
 ## ネーミングを提案してくれるサイト
 [codeic](https://codic.jp/engine)
