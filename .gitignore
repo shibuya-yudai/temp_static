@@ -2,6 +2,5 @@
 /.sass-cache
 
 # font
-/fonts
 *.ttf
 *.otf
