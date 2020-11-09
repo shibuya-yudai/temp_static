@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/**********************************************************
+* initialize.scss
+* 初めに読み込むものを定義
+
+* 目次
+* @import "./variable";
+* @import "./animations";
+* @import "./parts";
+**********************************************************/
+html {
+  font-size: 100%;
+}
+@media (min-width: 400px) {
+  html {
+    font-size: calc(112.5% + 4 * (100vw - 400px) / 400);
+  }
+}
+@media (min-width: 1000px) {
+  html {
+    font-size: calc(137.5%);
+  }
+}
+
+/**********************
+* variable.scss
+* variables/で定義したscssを読み込むファイル
+**********************/
+/*****************************
+* variables/collors.scss
+* 使う色はここで定義する
+* 使用例
+
+.foo {
+    color: colors(twitter);
+}
+*****************************/
+/*****************************
+* variables/breakpoints.scss
+* breakpointはここで定義したものを呼び出す
+* 使用例
+
+@include media-query(sm) {
+  color: blue;
+}
+*****************************/
+/*****************************
+* variables/functions.scss
+* 便利な関数を用意
+* 目次
+* center
+*****************************/
+/* 使用例
+.foo {
+  @include center;
+}
+****/
+/*****************************
+* variables/fonts.scss
+* 使用するフォント
+*****************************/
+@font-face {
+  font-family: 'Jost-Italic';
+  src: url("../../fonts/Jost-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../../fonts/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: 'NotoSansJP-Bold';
+  src: url("../../fonts/NotoSansJP-Bold.otf");
+}
+@font-face {
+  font-family: 'NotoSansJP-Regular';
+  src: url("../../fonts/NotoSansJP-Regular.otf");
+}
+@font-face {
+  font-family: 'NotoSerifJP-Bold';
+  src: url("../../fonts/NotoSerifJP-Bold.otf");
+}
+@font-face {
+  font-family: 'NotoSerifJP-Regular';
+  src: url("../../fonts/NotoSerifJP-Regular.otf");
+}
+/*****************************
+* animations.scss
+* cssアニメーションを定義
+
+* 目次
+* フェードインアニメーション
+*****************************/
+/*****フェードインアニメーション*****/
+.fadein {
+  opacity: 0;
+  transform: translate(0, 70px);
+  transition: all 1s ease 0s;
+}
+
+.fadein-left {
+  opacity: 0;
+  transform: translate(-100%, 0);
+  transition: all 1s ease 0s;
+}
+
+.fadein-right {
+  opacity: 0;
+  transform: translate(100%, 0);
+  transition: all 1s ease 0s;
+}
+
+.fadein-active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*****************************
+* parts.scss
+* パーツごとのscssを読み込む
+
+* 目次
+* menu
+*****************************/
+/*雑に書きたい時書く、書いたらふさわしい場所に移すこと*/
+h1 {
+  color: #55acee;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+div {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+  margin-bottom: 40rem;
+}
