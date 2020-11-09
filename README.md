@@ -1,5 +1,6 @@
 # 静的サイトを作る時の環境構築
 
+---------------------------------------------
 ## setup
 ### temp-staticからファイルを複製
 ```zsh
@@ -11,6 +12,8 @@ compass w
 ```
 ### htmlを右クリックしてlivereloadをオン
 
+---------------------------------------------
+
 ## BEM記法について
 BEMとは？
 「Block」「Element」「Modifier」の頭文字。BEM（ベム）と呼びます。
@@ -21,6 +24,7 @@ BEMとは？
 
 参考
 [BEMの書き方](https://qiita.com/mame_hashbill/items/81267a7ec498ff113a3b)
+
 [BEMの考え方を基にしたHTML / CSSのid・classの命名規則](https://qiita.com/kitaro0729/items/3189ded5647475bc2ae7)
 
 ## ネーミングを提案してくれるサイト
