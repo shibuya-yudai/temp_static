@@ -1,1 +1,6 @@
-.sass-cache
+# compass-cache
+/.sass-cache
+
+# font
+*.ttf
+*.otf
